@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {{ toastr.include_jquery() }}
+    {{ toastr.include_toastr_css() }}
+    {{ toastr.message() }}
+    <title>{% block title %}{% endblock %}-Phucs Chat App</title>
+</head>
+<body>
+    {{ toastr.include_toastr_js() }}
+    {% block content %}{% endblock %}
+</body>
+</html>
